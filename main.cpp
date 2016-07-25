@@ -21,6 +21,7 @@ int main()
         {
             found = true;
             pos = middle;
+            cout << "found at pos " << pos;
         }
         else if (ary[middle] > target)
         {
@@ -31,8 +32,7 @@ int main()
             first = middle+1;
         }
     }
-
-    cout << "found at pos " << pos;
-
+    if (!found)
+        cout << "not found" << endl;
     return 0;
 }
